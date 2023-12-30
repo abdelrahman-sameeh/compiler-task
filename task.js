@@ -158,11 +158,13 @@ function tokenizeJSParameter(parameter) {
 }
 
 // Example usage
-const parameter = "if(true) await a+b*6=7.55 else console.log('test')";
-const result = tokenizeJSParameter(parameter);
-// console.log(result);
+const result = tokenizeJSParameter("if(true) await a+b*6=7.55 else console.log('test')");
+console.log(result);
 
-// console.log("##".repeat(50));
+
+console.log("##".repeat(50));
+
+
 
 // 2- Syntax Analysis (Check if string will be run or not)
 function isStringRunnable(codeString) {
