@@ -158,11 +158,16 @@ function tokenizeJSParameter(parameter) {
 }
 
 // Example usage
-const result = tokenizeJSParameter("if(true) await a+b*6=7.55 else console.log('test')");
+const result = tokenizeJSParameter("if(true) await a+b*6=7.55");
 console.log(result);
 
 
+
+
+
 console.log("##".repeat(50));
+
+
 
 
 
@@ -182,7 +187,7 @@ function isStringRunnable(codeString) {
 // not work
 let codeToCheck = "if(true) await a+b*6=7.55 else console.log('test')";
 
-// work
+// // work
 codeToCheck = `
           const fs = require('fs').promises;
 
